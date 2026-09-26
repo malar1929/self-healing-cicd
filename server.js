@@ -4,13 +4,13 @@ const app = express();
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-    res.send("Self-Healing CI/CD Application - Version 1");
+    res.send("Self-Healing CI/CD Application - Version 2");
 });
 
 app.get("/health", (req, res) => {
     res.status(200).json({
         status: "healthy",
-        version: "v1"
+        version: "v2"
     });
 });
 
