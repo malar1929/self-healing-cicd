@@ -8,11 +8,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-    res.status(500).json({
-        status: "unhealthy",
+    res.status(200).json({
+        status: "healthy",
         version: "v2"
     });
 });
+
 app.listen(PORT, () => {
     console.log("Application running on http://localhost:3000");
 });
